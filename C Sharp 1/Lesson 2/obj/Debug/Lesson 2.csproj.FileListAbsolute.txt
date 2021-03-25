@@ -1,7 +1,0 @@
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\bin\Debug\Lesson 2.exe.config
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\bin\Debug\Lesson 2.exe
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\bin\Debug\Lesson 2.pdb
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\obj\Debug\Lesson 2.csprojAssemblyReference.cache
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\obj\Debug\Lesson 2.csproj.CoreCompileInputs.cache
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\obj\Debug\Lesson 2.exe
-C:\Users\Paul\source\repos\Git\Edu\GeekBrains\C Sharp 1\Lesson 2\obj\Debug\Lesson 2.pdb
