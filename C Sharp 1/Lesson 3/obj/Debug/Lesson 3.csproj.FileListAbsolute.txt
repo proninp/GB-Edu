@@ -1,6 +1,0 @@
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\bin\Debug\Lesson 3.exe
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\bin\Debug\Lesson 3.pdb
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\obj\Debug\Lesson 3.csprojAssemblyReference.cache
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\obj\Debug\Lesson 3.csproj.CoreCompileInputs.cache
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\obj\Debug\Lesson 3.exe
-C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 3\obj\Debug\Lesson 3.pdb
