@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Lesson_4
+namespace Lesson_5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Task2.Go(); // Here is Task1 inside
-            Task3.OneDimDemonstrate();
+            //Task1.Go();
+            //Task2.Go();
+            //Task3.Go();
             Task4.Go();
             Console.ReadLine();
         }
