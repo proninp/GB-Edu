@@ -1,0 +1,6 @@
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\bin\Debug\Lesson 6.exe
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\bin\Debug\Lesson 6.pdb
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\obj\Debug\Lesson 6.csprojAssemblyReference.cache
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\obj\Debug\Lesson 6.csproj.CoreCompileInputs.cache
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\obj\Debug\Lesson 6.exe
+C:\Users\Paul\source\repos\Git\GB-Edu\C Sharp 1\Lesson 6\obj\Debug\Lesson 6.pdb
