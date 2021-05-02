@@ -7,6 +7,9 @@ public class HomeWorkApp {
         task1(new int[]{1, 1, 0, 0, 1, 0, 1, 1, 0, 0});
         task2();
         task3(new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1});
+        task4();
+        printNewArray(task5(8, 5));
+        task6(new int[]{11, 25, 43, -12, 11, 4, 52, -20, -5, 8, 6, -11});
     }
 
     /**
@@ -57,6 +60,68 @@ public class HomeWorkApp {
     }
 
     /**
+     * Task 4
+     * Create a square two-dimensional integer array (the number of rows and columns is the same),
+     * and use a loop (s) to fill its diagonal elements with units
+     * (you can only use one of the diagonals, if both are difficult).
+     * You can determine the elements of one of the diagonals according to the following principle:
+     * the indices of such elements are equal, that is,[0][0], [1][1], [2][2], ..., [ n][n];
+     */
+    public static void task4() {
+        System.out.println("\nTask4:");
+        int arraySize = 12;
+        int[][] array = new int[arraySize][arraySize];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if ((i == j) || (i + j + 1 == arraySize)) {
+                    array[i][j] = 1;
+                }
+            }
+        }
+        printNewArray(array);
+    }
+
+    /**
+     * Task 5
+     * Write a method that accepts two arguments as input: len and initialValue,
+     * and returns a one-dimensional array of type int with length len,
+     * each cell of which is equal to initialValue;
+     *
+     * @param len          - the length of array
+     * @param initialValue - the value to init each element
+     * @return - your array
+     */
+    public static int[] task5(int len, int initialValue) {
+        System.out.println("\nTask5:");
+        int[] array = new int[len];
+        Arrays.fill(array, initialValue);
+        return array;
+    }
+
+    /**
+     * Task 6
+     * Set a one-dimensional array and find the minimum and maximum elements in it
+     *
+     * @param array in which you need to find min and max
+     */
+    public static void task6(int[] array){
+        System.out.println("\nTask6:");
+        printCurrentArray(array);
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for (int el : array) {
+            if (el > max) {
+                max = el;
+            }
+            if (el < min) {
+                min = el;
+            }
+        }
+        System.out.println("Minimum value of the array: " + min);
+        System.out.println("Maximum value of the array: " + max);
+    }
+
+    /**
      * Additional method to print existing array
      *
      * @param array to print
@@ -75,4 +140,18 @@ public class HomeWorkApp {
         System.out.println("New array:");
         System.out.println(Arrays.toString(array));
     }
+
+    /**
+     * Additional method to print new two dimensional array
+     *
+     * @param array to print
+     */
+    public static void printNewArray(int[][] array) {
+        System.out.println("New two dim array:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
+        }
+
+    }
+
 }
