@@ -10,6 +10,8 @@ public class HomeWorkApp {
         task4();
         printNewArray(task5(8, 5));
         task6(new int[]{11, 25, 43, -12, 11, 4, 52, -20, -5, 8, 6, -11});
+        System.out.println(task7(new int[]{3, -1, 8, 1, 2, 3, -7, -5})); // [3, -1] == [8, 1, 2, 3, -7, -5]
+        task8(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, 5);
     }
 
     /**
@@ -104,7 +106,7 @@ public class HomeWorkApp {
      *
      * @param array in which you need to find min and max
      */
-    public static void task6(int[] array){
+    public static void task6(int[] array) {
         System.out.println("\nTask6:");
         printCurrentArray(array);
         int max = Integer.MIN_VALUE;
@@ -119,6 +121,60 @@ public class HomeWorkApp {
         }
         System.out.println("Minimum value of the array: " + min);
         System.out.println("Maximum value of the array: " + max);
+    }
+
+    /**
+     * Task 7
+     * Write a method that passes a non-empty one-dimensional integer array,
+     * the method should return true if there is a place in the array where
+     * the sum of the left and right parts of the array are equal.
+     *
+     * @param array to check balance
+     * @return result of the check
+     */
+    public static boolean task7(int[] array) {
+        System.out.println("\nTask7:");
+        printCurrentArray(array);
+        int leftSum = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            int rightSum = 0;
+            leftSum += array[i];
+            for (int j = i + 1; j < array.length; j++) {
+                rightSum += array[j];
+            }
+            if (leftSum == rightSum) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Task 8
+     *
+     * @param array to rotate
+     * @param n - rotation count (if n <0 then rotation will go left)
+     */
+    public static void task8(int[] array, int n) {
+        System.out.println("\nTask8:");
+        printCurrentArray(array);
+        if (Math.abs(n) > array.length) {
+            n %= array.length;
+        }
+        if (array.length == 0 || (n == 0)) {
+            return;
+        }
+        int steps = (n < 0) ? array.length + n : n; // instead of left rotation
+        for (int i = 0; i < steps; i++) {
+            int replacesWith = array[0];
+            for (int j = 0; j < array.length - 1; j++) {
+                int replaced = array[j + 1];
+                array[j + 1] = replacesWith;
+                replacesWith = replaced;
+            }
+            array[0] = replacesWith; // replace first element with the last element
+        }
+        printNewArray(array);
     }
 
     /**
@@ -151,7 +207,5 @@ public class HomeWorkApp {
         for (int i = 0; i < array.length; i++) {
             System.out.println(Arrays.toString(array[i]));
         }
-
     }
-
 }
