@@ -1,0 +1,9 @@
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\bin\Debug\Asteroids.exe.config
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\bin\Debug\Asteroids.exe
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\bin\Debug\Asteroids.pdb
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.csprojAssemblyReference.cache
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.Properties.Resources.resources
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.csproj.GenerateResource.cache
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.csproj.CoreCompileInputs.cache
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.exe
+C:\Users\Paul\source\repos\Git\GB-Edu\GeekBrainsLevel2\Asteroids\obj\Debug\Asteroids.pdb
