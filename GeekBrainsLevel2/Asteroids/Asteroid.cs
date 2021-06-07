@@ -11,7 +11,7 @@ namespace Asteroids
     {
         int SpeedX { get; } = Rand.Next(Settings.AsteroidMinSpeedX, Settings.AsteroidMaxSpeedX);
         int SpeedY { get; } = Rand.Next(Settings.AsteroidMinSpeedY, Settings.AsteroidMaxSpeedY);
-        public static Image[] Images { get; set; } = new Image[4]
+        static Image[] Images { get; set; } = new Image[4]
         {
             Properties.Resources.ast_0,
             Properties.Resources.ast_1,
@@ -24,10 +24,12 @@ namespace Asteroids
         {
             Pos = new Point(Rand.Next(Game.Width - 100, Game.Width), Rand.Next(0, Game.Height));
             Dir = new Point(SpeedX, SpeedY);
+            Rect = new Rectangle(Pos.X, Pos.Y, Images[ImageIndex].Size.Width, Images[ImageIndex].Size.Height);
         }
         public override void Draw()
         {
             Game.Buffer.Graphics.DrawImage(Images[ImageIndex], Pos);
+            Rect = new Rectangle(Pos.X, Pos.Y, Images[ImageIndex].Size.Width, Images[ImageIndex].Size.Height);
         }
         public override void Update()
         {

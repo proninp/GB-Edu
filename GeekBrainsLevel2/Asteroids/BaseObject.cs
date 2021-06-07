@@ -8,33 +8,31 @@ using System.Threading.Tasks;
 
 namespace Asteroids
 {
-    class BaseObject
+    abstract class BaseObject: ICollision
     {
         public static Random Rand { get; } = new Random();
-        protected Point Pos;
-        protected Point Dir;
-        protected Size Size;
-        
+
+        internal Point Pos;
+        internal Point Dir;
+        internal Size Size;
+        internal int HelthOrPower;
+        public Rectangle Rect { get; set; }
+
         public BaseObject() { }
-        public BaseObject(Point pos, Point dir, Size size)
+        public BaseObject(Point pos, Point dir)
         {
             Pos = pos;
             Dir = dir;
-            Size = size;
         }
+        public BaseObject(Point pos, Point dir, Size size) : this(pos, dir) => Size = size;
+        public BaseObject(Point pos, Point dir, int helthOrPower) : this(pos, dir) => HelthOrPower = helthOrPower;
+
         public virtual void Draw()
         {
             Game.Buffer.Graphics.DrawEllipse(Pens.White, Pos.X, Pos.Y, Size.Width, Size.Height);
         }
-        public virtual void Update()
-        {
-            Pos.X = Pos.X + Dir.X;
-            Pos.Y = Pos.Y + Dir.Y;
-            if (Pos.X < 0) Dir.X = -Dir.X;
-            if (Pos.X > Game.Width) Dir.X = -Dir.X;
-            if (Pos.Y < 0) Dir.Y = -Dir.Y;
-            if (Pos.Y > Game.Height) Dir.Y = -Dir.Y;
-        }
+        public abstract void Update();
 
+        public bool Collision(ICollision obj) => ((BaseObject)obj).Rect.IntersectsWith(Rect);
     }
 }

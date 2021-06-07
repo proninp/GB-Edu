@@ -15,7 +15,7 @@ namespace Asteroids
         static void Main()
         {
             Form form = new Form
-            {
+            {                
                 Width = Settings.FieldWidth,
                 Height = Settings.FieldHeight,
                 MaximizeBox = false
