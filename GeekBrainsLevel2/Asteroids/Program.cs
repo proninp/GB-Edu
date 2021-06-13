@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Asteroids
@@ -15,12 +12,14 @@ namespace Asteroids
         static void Main()
         {
             Form form = new Form
-            {                
+            {
                 Width = Settings.FieldWidth,
                 Height = Settings.FieldHeight,
-                MaximizeBox = false
+                MaximizeBox = false,
+                BackgroundImage = Properties.Resources.background
             };
             Game.Init(form);
+            SplashScreen.ControlsInit(form);
             form.Show();
             Application.Run(form);
         }

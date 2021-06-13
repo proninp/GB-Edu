@@ -13,8 +13,10 @@ namespace Asteroids
         public Star(Point pos, Point dir, Size size): base(pos, dir, size) { }
         public Star(int i)
         {
-            Pos = new Point(Game.Width, Rand.Next(Settings.FieldHeight / (i + 1), Settings.FieldHeight));
-            Dir = new Point(i % Rand.Next(10, 20) + 1, 0);
+            Pos = //new Point(Game.Width, Rand.Next(Settings.FieldHeight / (i + 1), Settings.FieldHeight));
+                new Point(Rand.Next(0, Settings.FieldWidth), Rand.Next(10, Settings.FieldHeight));
+            Dir = //new Point(i % Rand.Next(10, 20) + 1, 0);
+                new Point(i % 20 - 1, 0);
             Size = new Size(StarSize, StarSize);
         }
         public override void Draw()
