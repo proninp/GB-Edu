@@ -63,6 +63,26 @@ namespace Asteroids.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Advanced_x1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Advanced_x1_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Advanced_x1_2 {
+            get {
+                object obj = ResourceManager.GetObject("Advanced_x1_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ast_0 {
             get {
                 object obj = ResourceManager.GetObject("ast_0", resourceCulture);
@@ -153,6 +173,16 @@ namespace Asteroids.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap R2_D2 {
+            get {
+                object obj = ResourceManager.GetObject("R2_D2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ray {
             get {
                 object obj = ResourceManager.GetObject("ray", resourceCulture);
@@ -166,6 +196,76 @@ namespace Asteroids.Properties {
         internal static System.Drawing.Bitmap redRay {
             get {
                 object obj = ResourceManager.GetObject("redRay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stormtrooper {
+            get {
+                object obj = ResourceManager.GetObject("stormtrooper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Death_Star {
+            get {
+                object obj = ResourceManager.GetObject("The_Death_Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Death_Star_Distroyed {
+            get {
+                object obj = ResourceManager.GetObject("The_Death_Star_Distroyed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIE_Interceptor_1 {
+            get {
+                object obj = ResourceManager.GetObject("TIE_Interceptor_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIE_Interceptor_2 {
+            get {
+                object obj = ResourceManager.GetObject("TIE_Interceptor_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vader {
+            get {
+                object obj = ResourceManager.GetObject("Vader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_wing {
+            get {
+                object obj = ResourceManager.GetObject("x_wing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

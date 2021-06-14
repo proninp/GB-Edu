@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Asteroids
 {
     class Bullet : BaseObject
     {
-        private static Image[] Images { get; set; } = new Image[2]
+        internal static Image[] Images { get; set; } = new Image[2]
         {
             Properties.Resources.ray,
             Properties.Resources.redRay
         };
-        internal int ImageIndex { get; set; }
+        internal static Image PlayerBulletImg => Images[0];
+        internal static Image EnemyBulletImg => Images[1];
+        internal int ImageIndex { get; set; }        
         public Bullet(Point pos, Point dir, int power) : base(pos, dir, power)
         {
             ImageIndex = 0;
@@ -32,12 +30,6 @@ namespace Asteroids
             Rect = new Rectangle(Pos.X, Pos.Y, Images[ImageIndex].Size.Width, Images[ImageIndex].Size.Height);
         }
 
-        public override void Update()
-        {
-            if (Pos.X > Settings.FieldWidth)
-                Pos.X = 0;
-            Pos.X += Dir.X;
-            
-        }
+        public override void Update() => Pos.X += Dir.X;
     }
 }
